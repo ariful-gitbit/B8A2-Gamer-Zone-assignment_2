@@ -26,9 +26,14 @@ font-weight: 700;
 }
 
 .color_heading_txt {	  /* color heading txt all over the page */
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); 
-font-size: 48px;
-font-weight: 700;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  /* background-clip: text; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: normal;  */
 }
 
 .mini_txt {   /* Mini txt in various place */
@@ -172,6 +177,28 @@ nav {
 }
 
 
+/* funny video section styles */
+.funny_video_section {
+  min-height: 700px;
+  /* border: 5px solid green; */
+}
+
+.funny_video_txt {
+  /* border: 5px solid red; */
+  text-align: center;
+}
+
+.funny_video_content {
+  display: flex;
+  gap: 20px;
+  /* border: 5px solid blue; */
+  min-height: 300px;
+  /* align-items: center; */
+  max-width: 1440px;
+  margin: auto;
+}
+
+
 
 
 
@@ -182,7 +209,7 @@ nav {
 
 /* mobile devices */
 @media screen and (max-width: 576px) {
-
+  
   .nav-container {
     flex-direction: column;
     margin-top: 50px;   
@@ -260,6 +287,26 @@ nav {
 
   .goat_img_content img{
     width: 70%;    
+  }
+
+  .funny_video_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .black_heading_txt {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .color_heading_txt {
+    font-size: 25px;  
+    font-weight: 700;    
+  }
+
+  .mini_txt {  
+    font-size: 12px;
+    font-weight: 500;
   }
 
 }
@@ -345,6 +392,28 @@ nav {
 
   .goat_img_content img{
     width: 70%;    
+  }
+
+  .funny_video_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .black_heading_txt {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .color_heading_txt {
+    font-size: 25px;  
+    font-weight: 700;    
+  }
+
+  .mini_txt {  
+    font-size: 12px;
+    font-weight: 500;
   }
 
 }

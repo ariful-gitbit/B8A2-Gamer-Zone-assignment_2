@@ -3,11 +3,11 @@
 
 /* shared styles */
 * {
-  box-sizing: border-box;  
+  box-sizing: border-box;
+  font-family: Work Sans;
 }
 
-body {
-  font-family: Work Sans;
+body {  
   margin: auto;
   /* border: 5px solid slateblue; */
   /* width: 1920px; */
@@ -43,7 +43,25 @@ font-size: 20px;
 font-weight: 500;
 }
 
-/* button pending */
+.btn_pink {
+  padding: 21px 40px;
+  border-radius: 48px;
+  border: 0px;
+  background-color: #FF42A5;  
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;  
+}
+
+.btn_blue {
+  padding: 21px 40px;
+  border-radius: 48px;
+  border: 0px;
+  background-color: #4EC5F7;  
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
 
 
 
@@ -107,6 +125,51 @@ nav {
 
 
 
+/* goat section styles */
+.goat_section {  
+  background-image: url('../images/Group14.png');  
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-color: #F9F9F9;
+  /* border: 5px solid green; */
+}
+
+.goat_contents {
+  max-width: 1440px;
+  /* border: 5px solid red; */
+  min-height: 700px;
+  margin: 0px auto;
+  display: flex;
+}
+
+.goat_txt_content {
+  /* border: 5px solid blue; */
+  width: 50%;
+  min-height: 700px;
+  padding-top: 100px;  
+}
+
+.goat_title {
+  color: #0B0223;  
+  font-size: 48px;  
+  font-weight: 600;  
+}
+
+.goat_big_txt {
+  font-size: 95px;
+  font-weight: 800;
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  margin-top: -50px;
+  margin-bottom: 0px; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.goat_img_content {
+  /* border: 5px solid chartreuse; */
+  width: 50%;
+  min-height: 700px;  
+}
 
 
 
@@ -134,6 +197,71 @@ nav {
     margin:  10px auto;       
   }
 
+  .goat_section {  
+    background-image: none;
+  }
+
+  .goat_contents {
+    flex-direction:column-reverse;
+  }
+
+  .goat_txt_content {
+    width: 100%;
+    min-height: 300px;
+    padding-top: 50px;    
+    text-align: center;
+    
+  }
+
+  .goat_txt_content ul { 
+    /* list-style-type: none; */
+    padding: 0;
+    /* margin: 0; */
+  }
+
+  .goat_title {    
+    font-size: 25px;  
+    font-weight: 600;
+    margin-bottom: 50px;  
+  }
+
+  .goat_big_txt {
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    margin-top: -50px;
+    margin-bottom: 0px; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  }
+
+  .normal_txt {  /* shared */
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .btn_pink {
+    padding: 10px 20px;    
+    font-size: 12px;
+    font-weight: 500;    
+  }
+
+  .btn_blue {
+    padding: 10px 20px;    
+    font-size: 12px;
+    font-weight: 500;    
+  }
+
+  .goat_img_content {
+    width: 100%;
+    text-align: center;
+    min-height: 300px;   
+  }
+
+  .goat_img_content img{
+    width: 70%;    
+  }
+
 }
 
 
@@ -148,10 +276,75 @@ nav {
   .nav-items-container {
     width: 70%;    
   }
-  
+
   .nav-items-container a {    
     font-size: 14px;
     margin:  10px auto;       
+  }
+
+  .goat_section {  
+    background-image: none;
+  }
+
+  .goat_contents {
+    flex-direction:column-reverse;
+  }
+
+  .goat_txt_content {
+    width: 100%;
+    min-height: 300px;
+    padding-top: 50px;    
+    text-align: center;
+    
+  }
+
+  .goat_txt_content ul { 
+    /* list-style-type: none; */
+    padding: 0;
+    /* margin: 0; */
+  }
+
+  .goat_title {    
+    font-size: 25px;  
+    font-weight: 600;
+    margin-bottom: 50px;  
+  }
+
+  .goat_big_txt {
+    font-size: 50px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    margin-top: -50px;
+    margin-bottom: 0px; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  }
+
+  .normal_txt {  /* shared */
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .btn_pink {
+    padding: 10px 20px;    
+    font-size: 12px;
+    font-weight: 500;    
+  }
+
+  .btn_blue {
+    padding: 10px 20px;    
+    font-size: 12px;
+    font-weight: 500;    
+  }
+
+  .goat_img_content {
+    width: 100%;
+    text-align: center;
+    min-height: 400px;   
+  }
+
+  .goat_img_content img{
+    width: 70%;    
   }
 
 }

@@ -13,7 +13,7 @@ body {
   /* width: 1920px; */
 }
 
-.logo_txt {   /* in logo and footer */
+.logo_txt { 
 font-size: 45px;
 font-weight: 700;
 color: #0B0223;
@@ -197,6 +197,12 @@ nav {
   margin: auto;
 }
 
+.video:hover {
+  border: 3px solid tomato;
+  border-radius: 10px;
+  opacity: 0.3;
+}
+
 /* play instant section styles */
 .play_instant_section {
   display: flex;  
@@ -226,6 +232,7 @@ nav {
   bottom: 250px; 
 }
 
+/* game section styles */
 .game_section{
   /* border: 5px solid green; */
   max-width: 1440px;
@@ -276,7 +283,84 @@ nav {
   padding: 5px;
 }
 
+/* footer section styles */
+footer {
+  background-color: #0B0223;
+  min-height: 600px;
+  padding-top: 130px;
+}
 
+.footer_logo-container {
+  /* border: 5px solid green; */
+  display: flex;
+  align-items: center;
+  width: 13%;
+  margin: auto;  
+  /* justify-content: space-between; */
+}
+
+.footer_logo_txt { 
+  font-size: 45px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.footer_menu {
+  /* border: 1px solid white; */
+  /* width: 40%; */
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;  
+}
+
+.footer_menu a {
+  text-decoration: none;
+  font-size: 18px;  
+  font-weight: 600;
+  color: #FFF;
+  margin-left: 70px;
+}
+
+.footer_icons{
+  /* border: 1px solid yellow; */
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer_icons img {  
+  margin-right: 50px;
+  width: 45px;
+  /* text-align: center; */
+}
+
+.footer_links {
+  /* border: 1px solid white; */
+  /* width: 40%; */
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;  
+}
+
+.footer_links a {
+  text-decoration: none;
+  font-size: 16px;  
+  font-weight: 500;
+  color: #9D9BA7;
+  margin-left: 70px;
+}
+
+.copyright_txt {
+  /* border: 1px solid white; */
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  color: #9D9BA7;
+  font-size: 16px;
+  font-weight: 500;  
+}
+
+
+  
 
 
 
@@ -415,6 +499,43 @@ nav {
   .all_games2{    
     display: flex;
     flex-direction: column;
+  }
+
+  .footer_logo-container {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .footer_menu {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .footer_menu a {    
+    margin-left: 0px;
+  }
+
+  .footer_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+  /* grid-gap: 30px; */
+  /* justify-items: center; */
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px;     */
+  }
+
+  .footer_links{
+    display: flex;
+    flex-direction: column;    
+  }
+
+  .footer_links a {
+    margin-left: 0px;
+  }
+
+  .footer_icons img {  
+    margin-right: 0px;    
   }
 
 }
